@@ -30,6 +30,7 @@ RUN apk add --no-cache --virtual build-deps alpine-sdk cmake git libusb-dev && \
     cd /tmp/src/ && \
     git clone https://github.com/merbanan/rtl_433 && \
     cd rtl_433/ && \
+    git checkout 0bb4672b1afb716d107b3060afc2d80a2159dbef && \
     mkdir build && \
     cd build && \
     cmake ../ && \
